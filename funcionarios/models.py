@@ -35,6 +35,6 @@ class Funcionarios(models.Model):
     data_nascimento = models.DateField(null=True)
     cpf = models.CharField(max_length=14, unique=True, null=True)
     numero = models.CharField(max_length=150, null=True)
-    estado = models.CharField(max_length=100, choices=estado,null=True)
+    estado = models.CharField(max_length=100, choices=estado, null=True)
     logradouro = models.CharField(max_length=200, null=True)
     cep = models.CharField(max_length=150, null=True)
